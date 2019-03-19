@@ -198,7 +198,7 @@ def problem2b(rect, n, delta, win):
     #    TIME ESTIMATE:   15 to 25 minutes.
     # -------------------------------------------------------------------------
     point1 = rect.get_upper_left_corner()
-    point2=rect.get_lower_right_corner()
+    point2 = rect.get_lower_right_corner()
     rect.attach_to(win)
     for k in range(1, n + 1):
         rect1 = rg.Rectangle(rg.Point(point1.x - delta * k, point1.y-delta*k), rg.Point(point2.x + delta * k, point2.y+delta*k))
